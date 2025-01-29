@@ -2,4 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.go2072408551 {
+  background: #030311 !important;
+  color: #ffffff !important;
+  border-radius: 13px !important;
+  font-size: 13px !important;
+  max-width : 400px !important;
+}
