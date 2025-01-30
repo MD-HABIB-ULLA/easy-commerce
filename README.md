@@ -6,7 +6,7 @@ This is a mini e-commerce web application built using **Next.js**. It includes f
 
 ## Live Demo
 
-You can access the live application here: [Easy-commerce]([https://easy-commerce-ten.vercel.app/])
+You can access the live application here: [Easy-commerce](https://easy-commerce-ten.vercel.app/)
 
 ## Features
 
@@ -130,14 +130,14 @@ The application is designed to be fully responsive, ensuring a seamless experien
 
 ## Hosting
 
-The application is hosted on **Vercel**. You can access the live demo here: [Easy-commerce]([https://easy-commerce-ten.vercel.app/])
+The application is hosted on **Vercel**. You can access the live demo here: [Easy-commerce](https://easy-commerce-ten.vercel.app/)
 
 ---
 
 ## Author
 
 - **Habib Ulla**  
-  GitHub: [GitHub Profile Link]([https://github.com/MD-HABIB-ULLA?tab=repositories])  
+  GitHub: [GitHub Profile Link](https://github.com/MD-HABIB-ULLA?tab=repositories)  
   Email: [habibulla1278@gmail.com]
 
 ---
