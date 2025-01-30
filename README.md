@@ -1,146 +1,111 @@
+# Mini E-Commerce Application (Easy commerce)
+
+## 🛒 Live Demo
+[Visit the Live Website](https://easy-commerce-ten.vercel.app/)
+
+## 📌 Overview
+This is a **mini e-commerce web application** built using **Next.js**. It allows users to browse products, view details, and manage a shopping cart.
+
+## 🚀 Features
+
+### ✅ Landing Page
+- Displays a list of products fetched from a mock API.
+- Each product card includes:
+  - Product image
+  - Name
+  - Price
+  - "Add to Cart" button
+
+### ✅ Product Details Page
+- Clicking a product navigates to a dynamic route **(/product/[id])**.
+- The product details page includes:
+  - Product image
+  - Name
+  - Description
+  - Price
+  - "Add to Cart" button
+  - Related products (fetched based on the category)
 
 
-# Mini E-Commerce Application
 
-This is a mini e-commerce web application built using **Next.js**. It includes features like a landing page with product listings, a product details page, and a cart functionality. The application is fully responsive and uses **TypeScript** for better code quality.
+### ✅ API Integration
+- Uses a mock API (Faker.js ) to fetch product data.
+- Implements API routes in Next.js for:
+  - Fetching products
+  - Adding/removing items in the cart
 
-## Live Demo
+### ✅ Performance Optimization
+- **Server-side rendering (SSR)** for the landing page.
+- **Static site generation (SSG)** for product details.
 
-You can access the live application here: [Easy-commerce](https://easy-commerce-ten.vercel.app/)
+### ✅ Responsive Design
+- Fully responsive on **mobile & desktop devices**.
 
-## Features
+### ✅ Code Quality
+- Built with **TypeScript**.
+- Follows **clean coding practices**.
+- Well-commented for better readability.
 
-1. **Landing Page**:
-   - Displays a list of products fetched from a mock API.
-   - Each product card shows:
-     - Product image
-     - Name
-     - Price
-     - "Add to Cart" button
+## 🛠️ Technologies Used
+- **Next.js** (React Framework)
+- **TypeScript**
+- **Tailwind CSS** (Styling)
+- **Mock API (Faker.js / JSON Placeholder)**
 
-2. **Product Details Page**:
-   - Dynamic route (`/product/[id]`) for each product.
-   - Displays:
-     - Product image
-     - Name
-     - Description
-     - Price
-     - "Add to Cart" button
-     - Related products (based on the product category)
+## 📦 Installation & Setup
 
-3. **Cart Functionality**:
-   - Cart page (`/cart`) to:
-     - List all products added to the cart.
-     - Show the total price of the cart.
-     - Allow users to remove items from the cart.
-
-4. **API Integration**:
-   - Uses a mock API to fetch product data.
-   - Implements API routes in Next.js for:
-     - Fetching products.
-     - Adding/removing items in the cart.
-
-5. **Performance**:
-   - Uses **Server-Side Rendering (SSR)** for the landing page.
-   - Uses **Static Site Generation (SSG)** for product details.
-
-6. **Responsive Design**:
-   - Works seamlessly on both desktop and mobile devices.
-
-7. **Code Quality**:
-   - Built with **TypeScript**.
-   - Follows clean coding practices.
-   - Includes comments for better understanding.
-
-## Technologies Used
-
-- **Next.js**: For server-side rendering and static site generation.
-- **TypeScript**: For type safety and better code quality.
-- **Tailwind CSS**: For responsive and modern styling.
-- **Mock API**: For fetching product data.
-- **Vercel**: For hosting the application.
-
-## Setup Instructions
-
-Follow these steps to set up the project locally:
-
-1. **Clone the Repository**:
-   ```bash
-   git clone [https://github.com/MD-HABIB-ULLA/easy-commerce]
-   cd [easy-commerce]
-   ```
-
-2. **Install Dependencies**:
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-
-3. **Run the Development Server**:
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
-
-4. **Open the Application**:
-   Open your browser and navigate to `http://localhost:3000`.
-
-## Folder Structure
-
-```
-.
-├── components/          # Reusable components
-├── pages/               # Application pages
-│   ├── api/             # API routes
-│   ├── cart/            # Cart page
-│   ├── product/         # Product details page
-│   └── index.tsx        # Landing page
-├── styles/              # Global styles
-├── types/               # TypeScript types
-├── utils/               # Utility functions
-├── public/              # Static assets
-├── next.config.js       # Next.js configuration
-├── tsconfig.json        # TypeScript configuration
-└── README.md            # Project documentation
+1. **Clone the Repository:**
+```sh
+ git clone https://github.com/MD-HABIB-ULLA/easy-commerce
 ```
 
-## API Integration
+2. **Navigate to the project directory:**
+```sh
+ cd easy-commerce
+```
 
-The application uses a mock API to fetch product data. The API routes are implemented in the `pages/api` directory.
+3. **Install dependencies:**
+```sh
+ npm install
+ # or
+yarn install
+```
 
-- **Fetch Products**: `/api/products`
+4. **Run the development server:**
+```sh
+ npm run dev
+ # or
+yarn dev
+```
 
+5. **Open your browser and visit:**
+```sh
+ http://localhost:3000
+```
 
-## Performance Optimization
+## 📤 Deployment
+The application is hosted on **Vercel**. You can visit the live version here:
+👉 **[Live Demo](https://easy-commerce-ten.vercel.app/)**
 
-- **Server-Side Rendering (SSR)**: Used for the landing page to fetch product data dynamically.
-- **Static Site Generation (SSG)**: Used for the product details page to pre-render pages at build time.
+## 📂 Folder Structure
+```
+📦 your-project
+ ┣ 📂 pages
+ ┃ ┣ 📂 api       # API routes
+ ┃ ┣ 📂 cart      # Cart page
+ ┃ ┣ 📂 product   # Dynamic product pages
+ ┃ ┗ 📜 index.tsx # Landing page
+ ┣ 📂 components  # UI components
+ ┣ 📂 hooks       # Custom hooks
+ ┣ 📂 styles      # Global styles
+ ┣ 📜 package.json
+ ┣ 📜 tsconfig.json
+ ┗ 📜 README.md
+```
 
-## Responsive Design
-
-The application is designed to be fully responsive, ensuring a seamless experience on both desktop and mobile devices.
-
-## Code Quality
-
-- **TypeScript**: Ensures type safety and reduces runtime errors.
-- **Clean Code**: Follows best practices for readability and maintainability.
-- **Comments**: Added where necessary for better understanding.
-
-## Hosting
-
-The application is hosted on **Vercel**. You can access the live demo here: [Easy-commerce](https://easy-commerce-ten.vercel.app/)
+## 📜 License
+This project is **open-source** and available for learning purposes. Feel free to fork & modify!
 
 ---
-
-## Author
-
-- **Habib Ulla**  
-  GitHub: [GitHub Profile Link](https://github.com/MD-HABIB-ULLA?tab=repositories)  
-  Email: [habibulla1278@gmail.com]
-
----
-
-Feel free to reach out if you have any questions or feedback!
+🚀 **Developed by [Habib Ulla](https://github.com/MD-HABIB-ULLA)**
 
