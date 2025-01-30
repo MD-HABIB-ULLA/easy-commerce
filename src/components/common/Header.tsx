@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { RootState } from "@/redux/store"; // Adjust path according to your project
 import Link from "next/link";
+import Image from "next/image";
 
 const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
@@ -32,9 +33,16 @@ const Header: React.FC = () => {
               href={"/"}
               className="flex-shrink-0 flex items-center md:mr-0 mr-1"
             >
-              <h1 className="md:text-2xl text-base font-bold text-primary">
-                ShopHub
-              </h1>
+              <div className="h-12 w-12">
+                {" "}
+                <Image
+                  alt="logo"
+                  height={1000}
+                  width={1000}
+                  src={"/images/logo.png"}
+                  className="h-full w-full object-contain"
+                />
+              </div>
             </Link>
             <div className="hidden sm:ml-6 md:flex sm:space-x-8">
               {menuItems.map((item) => (
@@ -64,7 +72,10 @@ const Header: React.FC = () => {
                 className="md:ml-2 ml-1 w-full bg-transparent border-none flex-1 focus:outline-none text-sm"
               />
             </div>
-            <Link href={"/cart"} className="md:ml-4 ml-1 flex items-center relative">
+            <Link
+              href={"/cart"}
+              className="md:ml-4 ml-1 flex items-center relative"
+            >
               <button className="md:p-2 p-1 rounded-full hover:bg-gray-100">
                 <ShoppingCart className="md:h-6 h-5 md:w-6 w-5 text-primary" />
                 {/* Display cart item count */}
